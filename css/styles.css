@@ -1,16 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
 
 
 /* Header Section */
@@ -23,9 +10,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 30px;
-  border-bottom: 1px solid #ccc;
+  gap: 130px;
+  padding: 10px 0px 0px 30px;
   margin: 0px 104px;
+}
+
+.favicon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .logo img {
@@ -38,7 +32,7 @@ body {
 }
 
 .search-bar input {
-  width: 90%;
+  width: 98%;
   padding: 10px 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -46,7 +40,9 @@ body {
 }
 
 .auth-links {
-  font-size: 14px;
+  font-size: 10px;
+  margin-right: 12px;
+  text-decoration: underline;
 }
 
 .auth-links a {
@@ -99,8 +95,9 @@ nav > ul > li {
 nav a {
   text-decoration: none;
   color: white;
-  font-weight: 500;
-  padding: 7px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 7px 8px;
   display: block;
   white-space: nowrap;
 }
@@ -120,7 +117,7 @@ nav ul li:hover > .dropdown {
   left: 0;
   background-color: #3b82f6;
   display: none;
-  width: 200px;
+  width: auto;
   flex-direction: column;
   z-index: 1000;
   border-radius: 4px;
@@ -152,7 +149,7 @@ nav ul li:hover > .dropdown {
   left: 100%;
   background-color: #60a5fa;
   display: none;
-  width: 220px;
+  width: auto;
   height: auto;
   flex-direction: column;
   border-radius: 4px;
@@ -195,6 +192,14 @@ nav ul li:hover > .dropdown {
   font-size: 14px;
   color: #555;
   margin-bottom: 10px;
+  font-weight: 700;
+  color: #0077cc;
+  align-items: center;
+  display: flex;
+}
+
+.breadcrumb span{
+  color: #0077cc;
 }
 
 .breadcrumb a {
@@ -206,12 +211,12 @@ nav ul li:hover > .dropdown {
   font-size: 24px;
   font-weight: bold;
 }
-
+/* 
 .highlight {
   background: #dcdcdc;
   padding: 5px 10px;
   font-weight: bold;
-}
+} */
 
 .tabs {
   display: flex;
@@ -243,6 +248,15 @@ nav ul li:hover > .dropdown {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
+.content-box-cat {
+  width: auto;
+  background: white;
+  padding: 10px 50px;
+  margin-top: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
 .content-box.toc{
   padding: 20px 50px;
 }
@@ -262,7 +276,7 @@ ul {
 }
 
 .content-box a {
-  color: #1a0dab;
+  color: #0000FF;
   /* text-decoration: underline; */
 }
 
@@ -290,7 +304,7 @@ ul {
 
 .toc li {
   margin: 5px 0;
-  color: #1a0dab;
+  color: #0000FF;
 }
 
 .toc li:hover {
@@ -451,10 +465,6 @@ ul {
 
 /* Notification Section */
 
-.add-notification{
-
-}
-
 .notification-card {
   background: white;
   padding: 20px;
@@ -487,7 +497,7 @@ ul {
 }
 
 .notification-card a {
-  color: blue;
+  color: #0000FF;
   text-decoration: none;
   font-weight: bold;
 }
