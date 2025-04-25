@@ -2,7 +2,7 @@
 
 /* Header Section */
 body {
-  margin: 0;
+  margin: 0px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -13,6 +13,7 @@ body {
   gap: 130px;
   padding: 10px 0px 0px 30px;
   margin: 0px 104px;
+  flex-wrap: wrap;
 }
 
 .favicon{
@@ -220,6 +221,7 @@ nav ul li:hover > .dropdown {
 
 .tabs {
   display: flex;
+  flex-wrap: wrap;
   border-bottom: 2px solid #ccc;
   background: white;
   margin-top: 15px;
@@ -240,12 +242,13 @@ nav ul li:hover > .dropdown {
 }
 
 .content-box {
-  width: 1033px;
+  min-width: 300px;
   background: white;
   padding: 20px;
   margin-top: 15px;
   border-radius: 5px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
 
 .content-box-cat {
@@ -258,7 +261,8 @@ nav ul li:hover > .dropdown {
 }
 
 .content-box.toc{
-  max-width: 973px;
+  min-width: 300px;
+  flex-wrap: wrap;
   padding: 20px 50px 20px 50px;
 }
 
@@ -278,7 +282,6 @@ ul {
 
 .content-box a {
   color: #0000FF;
-  /* text-decoration: underline; */
 }
 
 .preparing-tag{
@@ -292,6 +295,7 @@ ul {
 .toc {
   margin-top: 15px;
   padding: 16px 0px 16px 0px;
+  flex-wrap: wrap;
 }
 
 .toc h3 {
@@ -312,9 +316,22 @@ ul {
   cursor: pointer;
 }
 
+/* .topic-section{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: white;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+} */
+
 .section-title {
   font-weight: bold;
   margin-top: 20px;
+  flex-wrap: wrap;
+  min-width: 300px;
 }
 
 
@@ -361,14 +378,16 @@ ul {
   color: black;
 }
 
-
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 
 
 /* Topic 12 */
 .faq-container {
-  /* max-width: 700px; */
-  /* margin: 20px auto; */
   font-family: Arial, sans-serif;
 }
 
@@ -472,7 +491,8 @@ ul {
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.5);
   margin-top: 20px;
-  max-width: 310px;
+  min-width: 240px;
+  flex-wrap: wrap;
 }
 
 .notification-card h3 {
@@ -515,6 +535,8 @@ ul {
   background: white;
   padding: 4px 4px 4px 4px;
   box-shadow: 0 2px 6px rgba(202, 19, 19, 0.1);
+  flex-wrap: wrap;
+  display: flex;
 }
 
 .add-img img{
@@ -619,3 +641,21 @@ ul {
 }
 
 
+
+@media (max-width: 1200px){
+  .sub-container{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px){
+  .container{
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 768px){
+  .content-box.toc{
+    padding: 0px 20px;
+  }
+}
