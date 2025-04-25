@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <script>
+    function toggleFAQ(element) {
+      const faqItem = element.parentElement;
+      faqItem.classList.toggle("open");
+
+      const icon = element.querySelector(".icon");
+      icon.textContent = faqItem.classList.contains("open") ? "−" : "+";
+    }
+  </script>
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <img src="/images/logo.png" alt="MBA Universe Logo" />
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search exams..." />
+        </div>
+        <div class="auth-links">
+          <a href="#">Login</a> / <a href="#">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">ABOUT MBA</a></li>
+        <li><a href="#">CAT</a></li>
+        <li><a href="#">COLLEGES</a></li>
+        <li><a href="#">MBA EXAMS</a></li>
+        <li><a href="#">EXECUTIVE MBA</a></li>
+        <li><a href="#">BBA</a></li>
+        <li><a href="#">GD PI WAT</a></li>
+        <li><a href="#">IIMs</a></li>
+        <li><a href="#">FACULTY</a></li>
+      </ul>
+    </nav> -->
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">ABOUT MBA ▾</a>
+          <ul class="dropdown">
+            <li><a href="#">MBA Accreditation</a></li>
+            <li><a href="#">MBA Admissions</a></li>
+            <li><a href="#">MBA Placements</a></li>
+            <li><a href="#">MBA Courses</a></li>
+            <li><a href="#">MBA Fees</a></li>
+            <li><a href="#">MBA Rankings</a></li>
+            <li>
+              <a href="#">All About MBA »</a>
+              <ul class="sub-dropdown">
+                <li><a href="#">Why MBA</a></li>
+                <li><a href="#">Famous MBA Alumni</a></li>
+                <li><a href="#">Education Loan For MBA</a></li>
+                <li><a href="#">PGDM OR MBA</a></li>
+                <li><a href="#">IP University Delhi MBA</a></li>
+                <li><a href="#">MBA Full Form</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">CAT ▾</a></li>
+        <li><a href="#">COLLEGES ▾</a></li>
+        <li><a href="#">MBA EXAMS ▾</a></li>
+        <li><a href="#">EXECUTIVE MBA ▾</a></li>
+        <li><a href="#">BBA ▾</a></li>
+        <li><a href="#">GD PI WAT ▾</a></li>
+        <li><a href="#">IIMs ▾</a></li>
+        <li><a href="#">FACULTY ▾</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="breadcrumb"><a href="#">Home</a> / <a href="#">CAT</a></div>
+
+      <div class="title">
+        <span class="highlight">CAT 2025</span>: Exam Date, Eligibility,
+        Syllabus, Pattern, Preparation Tips, Registration
+      </div>
+
+      <div class="tabs">
+        <button class="active">Overview</button>
+        <button>Syllabus</button>
+        <button>Pattern</button>
+        <button>Preparation</button>
+        <button>MockTest</button>
+        <button>Registration</button>
+        <button>Results</button>
+        <button>Analysis</button>
+        <button>Answer Key</button>
+        <button>+</button>
+      </div>
+
+      <div class="sub-container">
+        <!-- Main Section -->
+        <div>
+          <div class="content-box">
+            <div class="update-info">
+              <i>🕒</i>Last Updated on April 18, 2025 by
+              <strong>MBAUniverse.com News Desk</strong>
+            </div>
+            <p>
+              CAT 2025 exam will be held on <strong>November 30, 2025</strong>.
+              <a href="#">CAT Registration 2025</a> will be open from August 1
+              till September 13, 2025. CAT scores are used by 21 IIMs, IITs,
+              IIFT, SPJIMR, MDI and almost all other top MBA colleges.
+              <a href="#">CAT Exam Pattern</a> covers VARC, DILR, and QA.
+              <a href="#">CAT exam preparation</a> requires strategic planning.
+              Practice with <a href="#">CAT mock tests</a> and read the full
+              article for syllabus, pattern and strategy.
+            </p>
+          </div>
+
+          <div class="content-box toc">
+            <a class="preparing-tag" href=""
+              >Preparing for CAT 2025? Get 40% Discount on IMS Coaching Courses.
+              Enrol Now
+            </a>
+            <h3>Table of Content</h3>
+            <ul>
+              <li>1. What is CAT Exam?</li>
+              <li>2. CAT 2025 Highlights</li>
+              <li>3. CAT Exam Date 2025</li>
+              <li>4. CAT Eligibility Criteria 2025</li>
+              <li>5. CAT 2025 Exam Pattern</li>
+              <li>6. CAT Exam Syllabus 2025</li>
+              <li>7. CAT Preparation 2025: How to Prepare?</li>
+              <li>8. CAT Registration Process 2025</li>
+              <li>9. CAT Registration Numbers: Year wise Trends</li>
+              <li>10. CAT Exam Centers in India</li>
+              <li>11. CAT 2025 Exam Day Dos and Don’ts</li>
+              <li>12. CAT 2025 Frequently Asked Questions</li>
+            </ul>
+
+            <!-- Topic 1 -->
+            <div class="">
+              <div class="section-title">1. What is CAT Exam?</div>
+              <p>
+                Conducted by one of the top IIMs every year by rotation, Common
+                Admission Test is the largest
+                <a href="#">MBA entrance exam</a> for MBA admission in 21 IIMs
+                and other top B-schools. So, it is the mandatory entrance exam
+                for <a href="#">MBA admission</a> 2026 in all the 21 IIMs, FMS
+                Delhi, IIFT Delhi, SPJIMR Mumbai, MDI Gurgaon, IIT Bombay, IIT
+                Delhi and hundreds of other top B-schools in India. Total number
+                of candidates who registered for CAT 2024 exam was 3.29 lakhs.
+                However, total number of candidates who appeared in CAT 2024
+                exam was 2.93 lakhs only. Salient Points about the CAT Exam are:
+              </p>
+              <ul style="list-style-type: disc; padding-left: 20px">
+                <li>
+                  CAT is a computer-based test conducted at more than 155 test
+                  cities and 400+ test venues
+                </li>
+                <li>
+                  CAT exam duration is two hours. Time allotted for three
+                  sections is 40 minutes each.
+                </li>
+                <li>
+                  CAT exam is divided into three sections of Verbal Ability &
+                  Reading Comprehension; Data Interpretation & Logical Reasoning
+                  and Quantitative Ability
+                </li>
+                <li>
+                  CAT Exam score is mandatory requirement for IIM admissions.
+                  IIMs do not consider any other exam like XAT or GMAT for
+                  two-year full-time MBA/PGP admission.
+                </li>
+              </ul>
+              <img
+                class=""
+                src="/images/keyImportant.jpg"
+                alt="MBA Universe Logo"
+              />
+            </div>
+
+            <!-- Topic 2 -->
+            <div>
+              <div class="section-title">2. CAT 2025 Highlights</div>
+              <p>
+                CAT 2025 will be conducted by IIM Kozhikode. CAT 2025 will be
+                held on November 30, 2025. Check complete details about CAT exam
+                2025.
+              </p>
+
+              <table class="cat-table">
+                <thead>
+                  <tr>
+                    <th>CAT Exam Particulars</th>
+                    <th>Key Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CAT Exam Full Form</td>
+                    <td>Common Admission Test, popularly known as ‘CAT’</td>
+                  </tr>
+                  <tr>
+                    <td>Who Conducts CAT Exam?</td>
+                    <td>One of 6 old IIMs conducts CAT every year</td>
+                  </tr>
+                  <tr>
+                    <td>Who is conducting CAT 2025?</td>
+                    <td>IIM Kozhikode</td>
+                  </tr>
+                  <tr>
+                    <td>What is the date of CAT 2025?</td>
+                    <td>Sunday, November 30, 2025</td>
+                  </tr>
+                  <tr>
+                    <td>How many questions are expected in CAT 2025 paper?</td>
+                    <td>66–68 Questions</td>
+                  </tr>
+                  <tr>
+                    <td>How many sections will be there in CAT 2025 paper?</td>
+                    <td>
+                      Three Sections; Verbal Ability & Reading Comprehension,
+                      Data Interpretation & Logical Reasoning, and Quantitative
+                      Ability
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>What is the Scoring Pattern for CAT 2025 exam?</td>
+                    <td>
+                      CAT marking scheme is +3 for every correct and –1 for
+                      incorrect. There was no negative marking for TITA
+                      Questions.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>How many CAT 2025 exam slots will there be?</td>
+                    <td>
+                      CAT 2025 will be conducted in 3 slots: Morning, Afternoon
+                      and Evening.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>What is the duration of CAT 2025 Exam?</td>
+                    <td>CAT 2025 exam duration is 2 hours</td>
+                  </tr>
+                  <tr>
+                    <td>What is the time limit for each section?</td>
+                    <td>
+                      CAT 2025 Sectional Limit is 40 Minutes for each Section.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Can I choose which section to attempt first?</td>
+                    <td>
+                      No, candidates must answer the sections in pre-defined
+                      order from section 1 to 3.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>What is the Testing Mode of CAT 2025?</td>
+                    <td>
+                      CAT 2025 will be held as Computer based exam at test
+                      centres across the country.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>What is CAT 2025 Notification Release date?</td>
+                    <td>
+                      CAT 2025 Notification will be released on Sunday, July 27,
+                      2025.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Which are top MBA Colleges accepting CAT 2025?</td>
+                    <td>
+                      Top MBA colleges accepting CAT 2025 are 21 IIMs, FMS,
+                      IIFT, MDI, SPJIMR, IITs, IMI
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>How to Apply for CAT 2025?</td>
+                    <td>
+                      CAT Application process can be done online on CAT official
+                      website iimcat.ac.in
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>What will be CAT 2025 Registration Fees?</td>
+                    <td>CAT Exam Fees is expected to be Rs. 2500</td>
+                  </tr>
+                  <tr>
+                    <td>What is CAT Official Website for Form Filling?</td>
+                    <td>CAT official website is iimcat.ac.in</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      How many candidates are expected to register for CAT 2025
+                      exam?
+                    </td>
+                    <td>
+                      About 3.15 lakhs candidates are expected to register for
+                      CAT 2025 exam.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Topic 3 -->
+            <div>
+              <div class="section-title">3. CAT Exam Date 2025</div>
+              <p>CAT 2025 exam dates and timelines are given below:</p>
+
+              <table class="cat-table">
+                <thead>
+                  <tr>
+                    <th>CAT 2025 Important Dates & Timeline</th>
+                    <th>Importants Dates</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CAT Notification Date 2025</td>
+                    <td>July 27, 2025</td>
+                  </tr>
+                  <tr>
+                    <td>Registration Start Date 2025</td>
+                    <td>August 1, 2025</td>
+                  </tr>
+                  <tr>
+                    <td>Registration Last Date</td>
+                    <td>September 20, 2025</td>
+                  </tr>
+                  <tr>
+                    <td>Registration Fees</td>
+                    <td>Rs. 2500</td>
+                  </tr>
+                  <tr>
+                    <td>Admit Card Release</td>
+                    <td>November 6, 2025</td>
+                  </tr>
+                  <tr>
+                    <td>Exam Dates</td>
+                    <td>November 30, 2025</td>
+                  </tr>
+                  <tr>
+                    <td>CAT answer key release date</td>
+                    <td>December 3, 2025</td>
+                  </tr>
+                  <tr>
+                    <td>CAT Result Date</td>
+                    <td>December 20, 2025</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <a class="preparing-tag" href=""
+                >Preparing for CAT 2025? Get 40% Discount on IMS Coaching
+                Courses. Enrol Now
+              </a>
+            </div>
+
+            <!-- Topic 4 -->
+            <div class="">
+              <div class="section-title">4. CAT Eligibility Criteria 2025</div>
+              <p>
+                Below are the important points regarding CAT 2025 eligibility
+                criteria:
+              </p>
+              <ul style="list-style-type: disc; padding-left: 20px">
+                <li>
+                  A candidate with minimum 50% marks in graduation is eligible
+                </li>
+                <li>A final year student in graduation is also eligible</li>
+                <li>There is no age limit to apply and appear in the exam</li>
+                <li>
+                  Note that IIMs have different eligibility criteria for MBA
+                  Admissions
+                </li>
+              </ul>
+              <p>Also Read <a href="">CAT Eligibility Criteria 2024 </a></p>
+            </div>
+
+            <!-- Topic 5 -->
+            <div>
+              <div class="section-title">5. CAT 2025 Exam Pattern</div>
+              <p>
+                CAT Exam pattern is divided in three sections: Verbal Ability &
+                Reading Comprehension, Data Interpretation & Logical Reasoning,
+                and Quantitative Ability. Each section can be further divided
+                into sub-sections. Since CAT exam is held in three slots, there
+                are minor changes in the exam pattern for each slot. Also, from
+                year to year, there are minor changes in CAT exam pattern, but
+                the overall structure has remained the same.
+              </p>
+
+              <p>
+                Overall, the CAT exam pattern has become more focused on
+                conceptual clarity, time efficiency, and reasoning ability. Over
+                the last five years, the CAT exam pattern has undergone several
+                notable changes in its pattern, number of questions, and
+                difficulty level. Check key changes in CAT exam pattern below.
+              </p>
+
+              <div>
+                <div class="section-title">1. Total Number of Questions:</div>
+                <ul class="selected-list">
+                  <li>
+                    o In 2019 and 2020, CAT had 100 questions (VARC: 34, DILR:
+                    32, QA: 34).
+                  </li>
+                  <li>
+                    o From 2021 onwards, the number of questions was reduced to
+                    66 (VARC: 24, DILR: 20, QA: 22), making the test shorter but
+                    more intense.
+                  </li>
+                  <li>
+                    o This pattern has continued through CAT 2023 and is
+                    expected to remain in CAT 2025.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="section-title">2. Time Duration:</div>
+                <ul class="selected-list">
+                  <li>
+                    o Until 2019, CAT had a 3-hour duration (60 minutes per
+                    section).
+                  </li>
+                  <li>
+                    o From 2020 onwards, the exam duration was reduced to 2
+                    hours, with 40 minutes per section, which increased the
+                    pressure on time management.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="section-title">
+                  3. Sectional Pattern & Difficulty Level:
+                </div>
+                <ul class="selected-list">
+                  <li>
+                    o The VARC section has seen a greater emphasis on Reading
+                    Comprehension, with fewer Verbal Ability questions like Odd
+                    One Out and Para Summary.
+                  </li>
+                  <li>
+                    o DILR has become more reasoning-focused, with tougher
+                    logic-based sets and fewer straightforward data
+                    interpretation questions.
+                  </li>
+                  <li>
+                    o QA has shifted towards Arithmetic, making it more
+                    accessible for non-engineering background candidates.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="section-title">
+                  4. Question Types – MCQ vs. TITA:
+                </div>
+                <ul class="selected-list">
+                  <li>
+                    o In 2019 and 2020, CAT had 100 questions (VARC: 34, DILR:
+                    32, QA: 34).
+                  </li>
+                  <li>
+                    o From 2021 onwards, the number of questions was reduced to
+                    66 (VARC: 24, DILR: 20, QA: 22), making the test shorter but
+                    more intense.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="section-title">
+                  5. Slot-wise Variations & Normalization:
+                </div>
+                <ul class="selected-list">
+                  <li>
+                    o In 2019 and 2020, CAT had 100 questions (VARC: 34, DILR:
+                    32, QA: 34).
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="section-title">
+                  CAT 2025 Exam Pattern (Expected)
+                </div>
+                <table class="cat-table">
+                  <thead>
+                    <tr>
+                      <th>Section No</th>
+                      <th>Section Name</th>
+                      <th>Duration</th>
+                      <th>MCQs</th>
+                      <th>TITA</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Verbal Ability & Reading Comprehension</td>
+                      <td>40 min</td>
+                      <td>20</td>
+                      <td>4</td>
+                      <td>24</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Verbal Ability & Reading Comprehension</td>
+                      <td>40 min</td>
+                      <td>20</td>
+                      <td>4</td>
+                      <td>24</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Verbal Ability & Reading Comprehension</td>
+                      <td>40 min</td>
+                      <td>20</td>
+                      <td>4</td>
+                      <td>24</td>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>-</td>
+                      <td>120 min</td>
+                      <td>46</td>
+                      <td>22</td>
+                      <td>68</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="section-title">CAT 2024 Exam Pattern</div>
+                <p>
+                  CAT 2024 Exam Pattern was same across all the three slots.
+                  Check table below. However, there were minor changes in
+                  section wise compositions. Check complete CAT 2024 exam
+                  analysis for details.
+                </p>
+              </div>
+
+              <div>
+                <div class="section-title">
+                  CAT 2024 Exam Pattern for Slot 1, 2, 3
+                </div>
+                <table class="cat-table">
+                  <thead>
+                    <tr>
+                      <th>Section No</th>
+                      <th>Section Name</th>
+                      <th>Duration</th>
+                      <th>MCQs</th>
+                      <th>TITA</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Verbal Ability & Reading Comprehension</td>
+                      <td>40 min</td>
+                      <td>20</td>
+                      <td>4</td>
+                      <td>24</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Verbal Ability & Reading Comprehension</td>
+                      <td>40 min</td>
+                      <td>20</td>
+                      <td>4</td>
+                      <td>24</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Verbal Ability & Reading Comprehension</td>
+                      <td>40 min</td>
+                      <td>20</td>
+                      <td>4</td>
+                      <td>24</td>
+                    </tr>
+                    <tr>
+                      <td>Total</td>
+                      <td>-</td>
+                      <td>120 min</td>
+                      <td>46</td>
+                      <td>22</td>
+                      <td>68</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="section-title">CAT Section wise Paper Pattern</div>
+                <p>
+                  The CAT exam pattern is divided into three sections, each of
+                  which can be further categorized into sub-sections. Since the
+                  exam is conducted in three different slots, there are minor
+                  variations in the exam pattern within the sections across
+                  slots. Check CAT Sectionwise composition for Slot 1 of CAT
+                  2024 exam.
+                </p>
+              </div>
+
+              <div>
+                <div class="section-title">
+                  CAT 2024 - Verbal Ability & Reading Comprehension Section
+                  Breakdown
+                </div>
+                <table class="cat-table">
+                  <thead>
+                    <tr>
+                      <th>Area</th>
+                      <th>Topic</th>
+                      <th>No of Questions</th>
+                      <th>Type</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Reading Comprehension</td>
+                      <td>
+                        RC 1: An exploration of the concept of craftsmanship,
+                        discussing its relevance and evolution over time.
+                      </td>
+                      <td>4</td>
+                      <td>MCQs</td>
+                    </tr>
+                    <tr>
+                      <td>Reading Comprehension</td>
+                      <td>
+                        RC 2: An analysis of how Netflix influences global
+                        culture, examining its role in shaping viewing habits
+                        and cultural trends
+                      </td>
+                      <td>4</td>
+                      <td>MCQs</td>
+                    </tr>
+                    <tr>
+                      <td>Reading Comprehension</td>
+                      <td>
+                        RC 3: A discussion on kangaroos, covering aspects such
+                        as their behavior, habitat, and significance in the
+                        ecosystem
+                      </td>
+                      <td>4</td>
+                      <td>MCQs</td>
+                    </tr>
+                    <tr>
+                      <td>Verbal Ability</td>
+                      <td>
+                        RC 4: An examination of economic principles or
+                        phenomena, potentially discussing market dynamics,
+                        economic theories, or financial systems
+                      </td>
+                      <td>4</td>
+                      <td>MCQs</td>
+                    </tr>
+                    <tr>
+                      <td>Verbal Ability</td>
+                      <td>Parajumble</td>
+                      <td>4</td>
+                      <td>MCQs</td>
+                    </tr>
+                    <tr>
+                      <td>Verbal Ability</td>
+                      <td>Para Summary</td>
+                      <td>4</td>
+                      <td>MCQs</td>
+                    </tr>
+                    <tr>
+                      <td>Verbal Ability</td>
+                      <td>Odd Sentence</td>
+                      <td>4</td>
+                      <td>TITA</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div>
+                <div class="section-title">
+                  CAT 2024 - Verbal Ability & Reading Comprehension Section
+                  Breakdown
+                </div>
+                <table class="cat-table">
+                  <thead>
+                    <tr>
+                      <th>Area</th>
+                      <th>No of Questions</th>
+                      <th>Type of Questions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Arithmetic</td>
+                      <td>8</td>
+                      <td>
+                        SICI, Time and Work, Time-Speed-Distance, Ratio
+                        Proportion, Mixtures & Alligations, Multiple operations,
+                        and Profit & Loss
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Algebra</td>
+                      <td>4</td>
+                      <td>
+                        Quadratic equations, Inequality with graph, Functions,
+                        and Identity-based questions
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Geometry</td>
+                      <td>7</td>
+                      <td>Quadrilaterals, Sphere with Cuboid</td>
+                    </tr>
+                    <tr>
+                      <td>Modern Math</td>
+                      <td>3</td>
+                      <td>Logarithms, Sequences, Permutations</td>
+                    </tr>
+                    <tr>
+                      <td>Number System</td>
+                      <td>3</td>
+                      <td>Remainders and Numbers</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="pdf-download">
+                  <div class="pdf-info">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26px"
+                      height="26px"
+                      fill="#f83e10"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-v608oq"
+                      focusable="false"
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      data-testid="PictureAsPdfIcon"
+                    >
+                      <path
+                        d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5zm4-3H19v1h1.5V11H19v2h-1.5V7h3zM9 9.5h1v-1H9zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4zm10 5.5h1v-3h-1z"
+                      />
+                    </svg>
+                    <span class="pdf-title">CAT EXAM PATTERN 2025</span>
+                  </div>
+                  <button class="download-btn">Download PDF</button>
+                </div>
+              </div>
+
+              <a class="preparing-tag" href=""
+                >Preparing for CAT 2025? Get 40% Discount on IMS Coaching
+                Courses. Enrol Now
+              </a>
+            </div>
+
+            <!-- Topic 6 -->
+            <div>
+              <div class="section-title">6. CAT Exam Syllabus 2025</div>
+              <div>
+                <ul
+                  style="list-style-type: disc; padding-left: 20px"
+                  class="selected-list"
+                >
+                  <li>
+                    <strong
+                      >CAT 2025 exam syllabus covers three sections:</strong
+                    >
+                    Verbal Ability & Reading Comprehension (VARC), Data
+                    Interpretation & Logical Reasoning (DILR), and Quantitative
+                    Ability (QA). While IIMs do not release a fixed syllabus,
+                    the CAT exam syllabus can be derived from CAT exam pattern.
+                  </li>
+                  <li>
+                    <strong
+                      >The VARC section includes Reading Comprehension
+                      (RC),</strong
+                    >
+                    Paragraph Completion, Summary Writing, and Odd Sentence
+                    questions, testing candidates on their reading speed,
+                    comprehension, and verbal reasoning. The DILR section
+                    assesses analytical and problem-solving skills through
+                    data-based caselets, logical puzzles, seating arrangements,
+                    tournaments, and graphs/charts-based interpretation.
+                  </li>
+                  <li>
+                    <strong>The Quantitative Ability (QA)</strong> section
+                    focuses on mathematical concepts, with questions from
+                    Arithmetic, Algebra, Geometry, Modern Math, and Number
+                    Systems. Arithmetic topics such as Percentages, Ratios,
+                    Profit & Loss, and Time & Work form a significant portion of
+                    the QA section. Algebra includes Linear & Quadratic
+                    Equations, Inequalities, and Logarithms, while Geometry
+                    covers Circles, Triangles, and Mensuration. Modern Math
+                    topics like Permutation & Combination and Probability also
+                    appear in the exam.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="pdf-download">
+                <div class="pdf-info">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26px"
+                    height="26px"
+                    fill="#f83e10"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-v608oq"
+                    focusable="false"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    data-testid="PictureAsPdfIcon"
+                  >
+                    <path
+                      d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5zm4-3H19v1h1.5V11H19v2h-1.5V7h3zM9 9.5h1v-1H9zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4zm10 5.5h1v-3h-1z"
+                    />
+                  </svg>
+                  <span class="pdf-title">CAT EXAM PATTERN 2025</span>
+                </div>
+                <button class="download-btn">Download PDF</button>
+              </div>
+
+              <a class="preparing-tag" href=""
+                >Preparing for CAT 2025? Get 40% Discount on IMS Coaching
+                Courses. Enrol Now
+              </a>
+            </div>
+
+            <!-- Topic 7 -->
+            <div>
+              <div class="section-title">
+                7. CAT Preparation 2025: How to Prepare?
+              </div>
+              <div>
+                <p>
+                  CAT Preparation 2025 requires a 6-9 months of preparation
+                  period. So now is the right time to focus on your CAT
+                  Preparation to do well in the CAT exam. Check tips on how to
+                  prepare for CAT 2025 exam.
+                </p>
+                <ul
+                  style="list-style-type: disc; padding-left: 20px"
+                  class="selected-list"
+                >
+                  <li>
+                    <strong
+                      >Understanding the CAT Exam Pattern and Syllabus:</strong
+                    >
+                    The CAT exam consists of three sections: Verbal Ability &
+                    Reading Comprehension (VARC), Data Interpretation & Logical
+                    Reasoning (DILR), and Quantitative Ability (QA). Each
+                    section is time-bound, with 40 minutes per section, making
+                    time management crucial. The syllabus covers key topics such
+                    as arithmetic, algebra, geometry, modern math, logical
+                    reasoning, and reading comprehension. While IIMs do not
+                    release an official syllabus, past trends indicate the key
+                    areas to focus on.
+                  </li>
+                  <li>
+                    <strong>Section-wise Preparation Strategy: </strong>For
+                    VARC, candidates should develop strong reading habits, focus
+                    on comprehension, and practice summary writing and para
+                    jumbles. DILR requires regular practice with logical
+                    puzzles, graphs, seating arrangements, and data caselets. In
+                    QA, arithmetic and algebra are the most important areas, and
+                    aspirants must focus on conceptual clarity, speed, and
+                    accuracy through mock tests and topic-wise practice.
+                  </li>
+                  <li>
+                    <strong>Importance of Mock Tests and Analysis:</strong> Mock
+                    tests are the best preparation tool for CAT, helping
+                    aspirants adapt to the exam pattern, improve time
+                    management, and assess strengths and weaknesses. Leading
+                    test series providers like IMS, TIME, Career Launcher, and
+                    Cracku offer mocks with varying difficulty levels. Analyzing
+                    performance after each mock is crucial to identify mistakes
+                    and improve accuracy.
+                  </li>
+                  <li>
+                    <strong>Best CAT Preparation Books and Resources: </strong>
+                    Some of the most recommended books include Arun Sharma’s
+                    Quantitative Aptitude, Nishit K. Sinha’s Logical Reasoning,
+                    and Word Power Made Easy by Norman Lewis for VARC. Coaching
+                    institutes like Elites Grid, Rodha, and 2IIM also provide
+                    structured study materials for effective preparation.
+                  </li>
+                  <li>
+                    <strong>Month-wise CAT Preparation Strategy: </strong
+                    >Aspirants should start by building fundamentals in the
+                    first few months (January-April), move to intensive practice
+                    (May-June), and focus on mock tests and time management
+                    (July-September). The last two months should be dedicated to
+                    final revision and exam strategy. In the final weeks,
+                    candidates should avoid learning new topics and focus on
+                    light revision and mental preparation.
+                  </li>
+                </ul>
+                <p>
+                  With a structured approach, consistent practice, and regular
+                  mock tests, aspirants can significantly improve their chances
+                  of scoring well in CAT 2025.
+                </p>
+
+                <div>
+                  How did CAT Toppers Prepare for Each Section? Check Strategy
+                </div>
+
+                <p>
+                  Sectional preparation strategy as followed by these toppers is
+                  shared below:
+                </p>
+
+                <table class="cat-table">
+                  <thead>
+                    <tr>
+                      <th>Topper Name & College</th>
+                      <th>VARC</th>
+                      <th>DILR</th>
+                      <th>Quant</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Shubham Bajaj, IIM Calcutta Student</td>
+                      <td>
+                        1.Attempt 80% with 80% accuracy, much better than 100%
+                        attempt with 50% accuracy 2.VARC is not a lot about
+                        having a very good vocabulary knowledge or extremely
+                        great grammatical skills. It is more about comprehending
+                        what you are reading
+                      </td>
+                      <td>
+                        1. Learn better methods for solving a particular LRDI
+                        set 2. Use Elimination Option, you can easily eliminate
+                        2 options out of four and for the remaining 2 options,
+                        you need a little bit careful attention
+                      </td>
+                      <td>
+                        1. Found Rodha YouTube playlist on Quants quite helpful
+                        2. Referred to Prepzone daily events 3.Attended free
+                        workshops organized by CrackU on YouTube
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Nandan Goel, IIM Calcutta Student</strong>
+                      </td>
+                      <td>
+                        1.VARC is one section which requires existing acumen and
+                        little of current preparation 2. I solely focused on
+                        mocks and sectional tests 3.I made a point of attempting
+                        every question in this section, unless I can’t
+                        understand the meaning of a problem.
+                      </td>
+                      <td>
+                        1.Refined my basics using the material I had by
+                        attempting some questions from some chapters 2.Major
+                        preparation was through sectional tests and mock exams
+                        3.There was no test in my student portal which was not
+                        attempted by me
+                      </td>
+                      <td>
+                        1. Completed the material (TIME books) and had for 3
+                        times, attempted each and every question. 2. Took
+                        sectional tests on a regular basis
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="section-title">
+                  CAT Mock Tests: Importance, Free Online
+                </div>
+
+                <p>
+                  Toppers are of the view that taking Mocks is of utmost
+                  importance as it is a very important preparation tool. If you
+                  are seriously preparing for the exam and wish to score high
+                  percentile, it is necessary to attempt more and more Mock
+                  Tests to get ready for the exam day.
+                </p>
+                <p>
+                  <a href="">Take free CAT Mock tests</a>
+                  based on previous years CAT papers on MBAUniverse.com.
+                </p>
+              </div>
+
+              <div class="pdf-download">
+                <div class="pdf-info">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26px"
+                    height="26px"
+                    fill="#f83e10"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-v608oq"
+                    focusable="false"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    data-testid="PictureAsPdfIcon"
+                  >
+                    <path
+                      d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5zm4-3H19v1h1.5V11H19v2h-1.5V7h3zM9 9.5h1v-1H9zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4zm10 5.5h1v-3h-1z"
+                    />
+                  </svg>
+                  <span class="pdf-title">CAT EXAM PATTERN 2025</span>
+                </div>
+                <button class="download-btn">Download PDF</button>
+              </div>
+
+              <a class="preparing-tag" href=""
+                >Preparing for CAT 2025? Get 40% Discount on IMS Coaching
+                Courses. Enrol Now
+              </a>
+            </div>
+
+            <!-- Topic 9 -->
+            <div>
+              <div class="section-title">
+                9. CAT Registration Numbers: Year wise Trends
+              </div>
+              <p>
+                Over the years, the number of CAT exam registrations has seen a
+                fluctuating trend, with a significant increase in last two
+                years. The COVID-19 pandemic in 2020 and 2021 led to a slight
+                decline in registrations and appearances, but the numbers
+                rebounded in 2022 and 2023.
+              </p>
+              <p>
+                Total number of candidates who registered for CAT 2024 exam was
+                3.29 lakhs. However, total number of candidates who appeared in
+                CAT 2024 exam was 2.93 lakhs only. Below is the year-wise
+                breakdown of CAT registrations and appearances.
+              </p>
+
+              <table class="cat-table">
+                <thead>
+                  <tr>
+                    <th>CAT Year</th>
+                    <th>Registered Candidates</th>
+                    <th>Appeared Candidates</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2024</td>
+                    <td>329,000</td>
+                    <td>293,000</td>
+                  </tr>
+                  <tr>
+                    <td>2023</td>
+                    <td>329,000</td>
+                    <td>293,000</td>
+                  </tr>
+                  <tr>
+                    <td>2022</td>
+                    <td>329,000</td>
+                    <td>293,000</td>
+                  </tr>
+                  <tr>
+                    <td>2021</td>
+                    <td>329,000</td>
+                    <td>293,000</td>
+                  </tr>
+                  <tr>
+                    <td>2020</td>
+                    <td>329,000</td>
+                    <td>293,000</td>
+                  </tr>
+                  <tr>
+                    <td>2019</td>
+                    <td>329,000</td>
+                    <td>293,000</td>
+                  </tr>
+                  <tr>
+                    <td>2018</td>
+                    <td>329,000</td>
+                    <td>293,000</td>
+                  </tr>
+                  <tr>
+                    <td>2017</td>
+                    <td>329,000</td>
+                    <td>293,000</td>
+                  </tr>
+                  <tr>
+                    <td>2016</td>
+                    <td>329,000</td>
+                    <td>293,000</td>
+                  </tr>
+                  <tr>
+                    <td>2015</td>
+                    <td>329,000</td>
+                    <td>293,000</td>
+                  </tr>
+                  <tr>
+                    <td>2014</td>
+                    <td>329,000</td>
+                    <td>293,000</td>
+                  </tr>
+                  <tr>
+                    <td>2013</td>
+                    <td>329,000</td>
+                    <td>293,000</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <a class="preparing-tag" href=""
+                >Preparing for CAT 2025? Get 40% Discount on IMS Coaching
+                Courses. Enrol Now
+              </a>
+            </div>
+
+            <!-- Topic 10 -->
+            <div>
+              <div class="section-title">10. CAT Exam Centers in India</div>
+              <p>
+                The exam will be held in 170 test cities having around 400 cat
+                exam centers across the country. Check
+                <a href=""> List of CAT Exam Test Cities. </a>
+              </p>
+            </div>
+
+            <!-- Topic 11 -->
+            <div>
+              <div class="section-title">
+                11. CAT 2025 Exam Day Dos and Don’ts: CAT Exam Day Guidelines
+              </div>
+              <p>
+                CAT Exam Day Dos and Donts are important guidelines and
+                instructions that are issued by IIMs for candidates to ensure
+                smooth conduct of the exam
+              </p>
+              <p>
+                Dos: Recheck Admit Card details, Print and Carry CAT Admit Card
+                Hard Copy, Keep Specified Photo ID Ready, Locate and Visit CAT
+                Exam Centre in advance and Ensure to Mark Attendance.
+              </p>
+              <p>
+                Don’ts: Don’t carry Prohibited Articles in CAT Exam Centre,
+                Follow Dress Code, Do Not Carry Electronic Gadgets, Don’t Apply
+                Mehndi (Henna) on Palm Side.
+              </p>
+              <p>
+                In Conclusion, CAT Full Form is Common Admission Test. CAT 2025
+                is not just a test of knowledge but also of strategy, time
+                management, and problem-solving skills. CAT Exam Date is
+                November 30, 2025. A well-structured study plan that includes
+                conceptual clarity, topic-wise practice, and extensive mock test
+                analysis is essential for success. With a disciplined approach,
+                the right study materials, and consistent practice, candidates
+                can significantly improve their performance and secure admission
+                to India's top management institutes. Stay focused, trust the
+                process, and aim for excellence in CAT 2025.
+              </p>
+            </div>
+
+            <!-- Topic 12 -->
+            <div class="faq-container">
+              <h2>12. CAT 2025 Frequently Asked Questions</h2>
+              <p>Frequently Asked Questions</p>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span>Q: What is the official website of CAT exam?</span>
+                  <span class="icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  A: The official website is iimcat.ac.in
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span>Q: What will CAT 2025 Notification be released?</span>
+                  <span class="icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  A: The notification will be released around July/August 2025.
+                </div>
+              </div>
+
+              <div class="faq-item open">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span
+                    ><strong
+                      >Q: What is the duration of CAT 2025 Exam?</strong
+                    ></span
+                  >
+                  <span class="icon">−</span>
+                </div>
+                <div class="faq-answer">
+                  A: CAT 2025 exam duration is 2 hours.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span>Q: What is the date of CAT 2025?</span>
+                  <span class="icon">+</span>
+                </div>
+                <div class="faq-answer">A: Tentatively, in November 2025.</div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span>Q: What is the fee for CAT exam 2025?</span>
+                  <span class="icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  A: Approximately ₹2400 for General category.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span>Q: Who will conduct CAT in 2025?</span>
+                  <span class="icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  A: One of the IIMs (rotational basis).
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Notification Section -->
+        <div class="add-notification">
+          <!-- NOtification Section -->
+          <div class="notification-card">
+            <h3>Admission 2025 Notifications</h3>
+            <hr />
+            <ul>
+              <li>
+                <a href="#"
+                  >IFMR GSB Krea University MBA Admission – Apply Now</a
+                >
+              </li>
+              <li>
+                <a href="#">IMI Kolkata PGDM Admission Open – Apply Now</a>
+              </li>
+              <li>
+                <a href="#">IMI Bhubaneswar PGDM Admission – Apply Now</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Add Section -->
+          <div class="add-img">
+            <img src="/images/add/public.png" alt="MBA Universe Logo" />
+            <img src="/images/add/public (1).png" alt="MBA Universe Logo" />
+            <img src="/images/add/public (2).png" alt="MBA Universe Logo" />
+            <img src="/images/add/public (3).png" alt="MBA Universe Logo" />
+            <img src="/images/add/public (4).png" alt="MBA Universe Logo" />
+            <img src="/images/add/public (5).png" alt="MBA Universe Logo" />
+            <img src="/images/add/public (6).png" alt="MBA Universe Logo" />
+            <img src="/images/add/public (7).png" alt="MBA Universe Logo" />
+            <img src="/images/add/public (8).png" alt="MBA Universe Logo" />
+            <img src="/images/add/public (9).png" alt="MBA Universe Logo" />
+            <img src="/images/add/public (10).png" alt="MBA Universe Logo" />
+            <img src="/images/add/public (11).png" alt="MBA Universe Logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>MBA ENTRANCE EXAM</h4>
+          <a href="#">CAT</a>
+          <a href="#">MAT</a>
+          <a href="#">SNAP</a>
+          <a href="#">GMAT</a>
+          <a href="#">MAH MBA CET</a>
+          <a href="#">IBSAT</a>
+          <a href="#">PGCET MBA</a>
+          <a href="#">KMAT Karnataka</a>
+          <a href="#">TS ICET</a>
+          <a href="#">MBA Admission</a>
+          <!-- <img src="mbauniverse-logo.png" alt="MBA Universe" class="footer-logo" /> -->
+        </div>
+
+        <div class="footer-column">
+          <h4>TOP MBA COLLEGES</h4>
+          <a href="#">MBA in Delhi</a>
+          <a href="#">MBA in Mumbai</a>
+          <a href="#">MBA in Hyderabad</a>
+          <a href="#">MBA in Ahmedabad</a>
+          <a href="#">MBA in Kolkata</a>
+          <a href="#">MBA in Lucknow</a>
+          <a href="#">MBA in Dehradun</a>
+          <a href="#">MBA Specializations</a>
+          <a href="#">MBA in Finance</a>
+          <a href="#">College Predictors</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>GD, PI, WAT | IIM</h4>
+          <a href="#">Group Discussion</a>
+          <a href="#">GD Topics</a>
+          <a href="#">Personal Interview</a>
+          <a href="#">IIMs in India</a>
+          <a href="#">IIM Admission</a>
+          <a href="#">IIM Placements</a>
+          <a href="#">IIM Fees for MBA</a>
+          <a href="#">IIM Admission Process</a>
+          <a href="#">MBA from IITs</a>
+          <a href="#">IIM CAP</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>BBA</h4>
+          <a href="#">BBA Course</a>
+          <a href="#">BBA Admission</a>
+          <a href="#">BBA Exams</a>
+          <a href="#">BBA Colleges in India</a>
+          <a href="#">IPMAT</a>
+          <a href="#">IIM Rohtak IPM</a>
+          <a href="#">IIFT IPM</a>
+          <a href="#">JIPMAT</a>
+          <a href="#">NMIMS NPAT</a>
+          <a href="#">Symbiosis-set</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>ONE YEAR MBA</h4>
+          <a href="#">One Year MBA</a>
+          <a href="#">Best One Year MBA Programs</a>
+          <a href="#">One Year MBA Fee</a>
+          <a href="#">One Year MBA Offered by IIMs</a>
+          <a href="#">One Year MBA Offered by B-schools</a>
+          <a href="#">Executive MBA</a>
+          <a href="#">Distance MBA</a>
+          <a href="#">Top Distance MBA Colleges in India</a>
+          <a href="#">Part Time MBA</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>QUICK LINKS</h4>
+          <a href="#">About Us</a>
+          <a href="#">Sitemap</a>
+          <a href="#">Advertise</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">IMC 2024</a>
+          <a href="#">IMC 2023</a>
+          <a href="#">IMC 2022</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-contact">
+          <img class="footer-logo" src="/images/logo.png" alt="" />
+          <p>Contact Us</p>
+          <div class="social-icons">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium fw-40 css-i4bv87-MuiSvgIcon-root"
+                focusable="false"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                width="40px"
+                height="40px"
+                fill="#1a6ad3"
+                data-testid="FacebookIcon"
+              >
+                <path
+                  d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium fw-40 css-i4bv87-MuiSvgIcon-root"
+                focusable="false"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                width="40px"
+                height="40px"
+                fill="#137fe5"
+                data-testid="LinkedInIcon"
+              >
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium fw-40 css-i4bv87-MuiSvgIcon-root"
+                focusable="false"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                width="40px"
+                height="40px"
+                fill="#d3391a"
+                data-testid="YouTubeIcon"
+              >
+                <path
+                  d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p>Copyright by © 2025. Designed by <a href="#">Codewraps</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
