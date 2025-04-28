@@ -7,13 +7,29 @@ body {
 }
 
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 130px;
   padding: 10px 0px 0px 30px;
-  margin: 0px 104px;
+  /* margin: 0px 104px; */
   flex-wrap: wrap;
+}
+
+/* menu btn */
+
+.menu-btn {
+  display: none;
+  background-color: #005cbf;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.menu-btn:hover {
+  background-color: #004a94;
 }
 
 .favicon{
@@ -55,6 +71,19 @@ body {
   text-decoration: underline;
 }
 
+.login-btn{
+  display: none;
+  background-color: #005cbf;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.login-btn:hover {
+  background-color: #004a94;
+}
 
 
 
@@ -73,13 +102,16 @@ body {
 
 
 /* NavBar Section */
+
 nav {
   background-color: #005cbf;
   display: flex;
   justify-content: center;
   padding: 0;
-  height: 40px;
+  height: auto;
   align-items: center;
+  /* position: relative; */
+  /* z-index: 1000; */
 }
 
 nav ul {
@@ -108,7 +140,9 @@ nav > ul > li:hover {
 }
 
 /* Dropdown styles */
-nav ul li:hover > .dropdown {
+
+
+ nav ul li:hover > .dropdown {
   display: flex;
 }
 
@@ -139,7 +173,6 @@ nav ul li:hover > .dropdown {
   background-color: #2563eb;
 }
 
-/* Sub-dropdown */
 .dropdown li:hover > .sub-dropdown {
   display: flex;
 }
@@ -182,6 +215,7 @@ nav ul li:hover > .dropdown {
   margin: auto;
   padding: 15px 50px 12px 50px;
   background-color: #F1F0F0;
+  overflow: hidden;
 }
 
 .sub-container{
@@ -646,6 +680,48 @@ ul {
   .sub-container{
     flex-direction: column;
   }
+
+  .auth-links{
+    display: none;
+  }
+
+  nav ul {
+    position: absolute;
+    background-color: #005cbf;
+    left: -115%;
+    top: 20%;
+    width: 50%;
+    padding-block: 20px;
+    transition: left 0.3s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    background-color: #005cbf;
+  }
+
+  nav ul.active{
+    left: 0;
+  }
+
+
+  .menu-btn {
+    display: block;
+    margin-right: 20px;
+    position: relative;
+    /* top: 40px; */
+    right: 10%;
+  }
+
+  .login-btn{
+    display: block;
+    margin-right: 20px;
+  }
+
+  /* .header{
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px;
+  } */
+
 }
 
 @media (max-width: 768px){
